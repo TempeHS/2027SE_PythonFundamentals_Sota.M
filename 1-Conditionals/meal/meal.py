@@ -8,11 +8,13 @@ def main():
             print("Lunch time")
         elif c_time >= 18 and c_time <= 19:
             print("Dinner time")
+    else:
+        print("")
 
 
 def textToHour(time):
-    hours, mins = time.split(":")
-    hours_int = int(hours)
+    hours = time.split(":")
+    hours_int = int(hours[0])
     return hours_int
 
 
